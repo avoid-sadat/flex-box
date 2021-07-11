@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nab-flex</title>
+    <script src="https://kit.fontawesome.com/f05b754837.js" crossorigin="anonymous"></script>
+    <style>
+        .flex-continer{
+            display: flex;
+            justify-content:center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .login-form input,button{
+            font-size: 1.3em;
+            margin-top: 15px;
+            border:2px solid orange;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        .login-form button{
+            /* padding: 5px; */
+            background-color: yellowgreen;
+        
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        
+        }
+        nav a{
+            display: inline-flex;
+            margin-right: 10px;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">home-1</a>
+                <a href="">home-2</a>
+                <a href="">home-3</a>
+                <a href="">home-4</a>
+            </span>
+         <span>
+            <a href=""><i class="far fa-user-circle"></i></a>
+            <a href=""><i class="fas fa-sign-in-alt"></i></a>
+         </span>
+          
+        </nav>
+    </header>
+    <section class="flex-continer">
+        
+        <form action="" class="login-form">
+            <h1>Login</h1>
+            <input type="email" placeholder="input email">
+            <input type="password" placeholder="input password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>
